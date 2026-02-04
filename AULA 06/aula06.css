@@ -26,6 +26,13 @@ body {
     color: white;
     padding: 20px;
     text-align: center;
+    font-size: 45px;
+}
+.header {
+    min-height: 20vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 /* LAYOUT PRINCIPAL */
