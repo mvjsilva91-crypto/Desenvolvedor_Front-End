@@ -1,0 +1,125 @@
+/* reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial;
+}
+
+/* HEADER */
+.header {
+    background: #222;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+/* LAYOUT PRINCIPAL */
+.container {
+    display: flex; 
+    min-height: 80vh;
+}
+
+/* SIDEBAR */
+.sidebar {
+    width: 200px;
+    background: #333;
+    color: white;
+    padding: 20px;
+}
+
+.sidebar ul {
+    list-style: none;
+}
+
+.sidebar li {
+    margin-bottom: 15px;
+}
+
+/* CONTEÚDO */
+.content {
+    flex: 1; /* ocupa o resto da tela */
+    padding: 20px;
+    gap: 20px;
+    border: 10xp solid black;
+
+}
+
+/* CARDS */
+.cards {
+    display: flex; 
+    gap: 20px;
+    flex-wrap: wrap; 
+   
+}
+
+/* Separando em Colunas */
+.porta {
+    flex: 1 1 200px; 
+    background: #f2eeee;
+    padding: 40px;
+    text-align: center;
+    border-radius: 10px;
+    gap: 10px;
+    flex-direction: column;
+    align-items: center;
+
+    
+}
+
+.porta2 {
+        flex: 1 1 200px ;
+        background:rgb(244, 243, 242) ;
+        padding: 40px;
+        text-align: center;
+        border-radius: 10px;
+        gap: 10px;
+        flex-direction: column;
+        align-items: center;
+       
+       
+}
+
+/* Estilizando as Imagens */
+.porta img {
+    width: 100%;
+    border-radius: 8px;
+    transition: 2s;
+}
+.porta img:hover{
+                transform: scale(1.2);
+}
+
+.porta2 img {
+    width: 100%;
+    border-radius: 8px;
+}
+.porta2 img:hover{
+                transform: scale(1.2);
+}
+/* ------------------------------------------- */
+
+/* Estilo do Butão */
+
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background: #111112;
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    text-align: center;
+}
+
+
+
+/* FOOTER */
+.footer {
+    background: #222;
+    color: white;
+    text-align: center;
+    padding: 15px;
+}
+
+
+
