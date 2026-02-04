@@ -6,9 +6,23 @@
     font-family: Arial;
 }
 
+/* Colocando uma imagem no Corpo */
+body {
+     background-image: url();
+     background-size: cover;
+     background-position: center;
+     background-repeat: no-repeat;
+     background-attachment: fixed;
+}
+
+
+
 /* HEADER */
 .header {
-    background: #222;
+    background-image: url("https://media2.giphy.com/media/v1.Y2lkPTZjMDliOTUyMG01bXQ2eTY0bm54NzRvcTdhcDJ5aWZqeWZ0aXVobTNiZHc1dGh1aCZlcD12MV9naWZzX3NlYXJjaCZjdD1n/lQDdDwdZpfYRn1MsJy/200w.gif");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
     color: white;
     padding: 20px;
     text-align: center;
@@ -55,29 +69,28 @@
 
 /* Separando em Colunas */
 .porta {
+    display: flex;            
+    flex-direction: column;
     flex: 1 1 200px; 
     background: #f2eeee;
     padding: 40px;
     text-align: center;
     border-radius: 10px;
     gap: 10px;
-    flex-direction: column;
     align-items: center;
-
-    
 }
 
+
 .porta2 {
-        flex: 1 1 200px ;
-        background:rgb(244, 243, 242) ;
-        padding: 40px;
-        text-align: center;
-        border-radius: 10px;
-        gap: 10px;
-        flex-direction: column;
-        align-items: center;
-       
-       
+    display: flex;            
+    flex-direction: column;
+    flex: 1 1 200px; 
+    background: #f2eeee;
+    padding: 40px;
+    text-align: center;
+    border-radius: 10px;
+    gap: 10px;
+    align-items: center;
 }
 
 /* Estilizando as Imagens */
@@ -102,13 +115,16 @@
 /* Estilo do Butão */
 
 .btn {
-    display: inline-block;
+    display: inline-flex;
     padding: 10px 20px;
     background: #111112;
     color: white;
     text-decoration: none;
     border-radius: 8px;
     text-align: center;
+    margin-top: auto;
+    align-self: center;
+
 }
 
 
