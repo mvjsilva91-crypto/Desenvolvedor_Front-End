@@ -74,6 +74,11 @@ body {
    
 }
 
+.cards > div {
+    width: 23%;
+
+}
+
 /* Separando em Colunas */
 .porta {
     display: flex;            
@@ -113,6 +118,7 @@ body {
 .porta2 img {
     width: 100%;
     border-radius: 8px;
+    transition: 2s;
 }
 .porta2 img:hover{
                 transform: scale(1.2);
