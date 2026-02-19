@@ -229,7 +229,7 @@ document.getElementById("btn").onclick = function(){
 let curtidas = 0;
 document.getElementById("like").onclick = function(){
   curtidas++;
-  this.innerText = "❤ " + curtidas;
+  this.innerText = "👍" + curtidas;
 };
 
 
