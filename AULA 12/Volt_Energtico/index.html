@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Volt Energy | Sinta o Impacto</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <div class="logo">
+            VOLT<span style="color: var(--primary-color)">.</span>
+        </div>
+
+        <div class="nav-links">
+            <a href="#">Sabores</a>
+            <a href="#">Performance</a>
+            <a href="#">FAQ</a>
+        </div>
+
+        <button class="btn-cta">Pedir Agora</button>
+    </nav>
+    
+    <main>
+        <section class="hero-content">
+            <header>
+                <span id="flavor-tag" class="tagline">Edição Especial</span>
+                <h1 id="main-title" class="hero-title">PULSE <br>DE ENERGIA</h1>
+                <p id="main-descripition" class="hero-description">
+                    Aumente a sua frequência com a fórmula de absorção rápida.
+                    Desenvolvida para gamers e desenvolvedores
+                </p>
+            </header>
+        
+
+        <div class="flavor-selection">
+            <span class="flavor-label">Selecione o Sabor</span>
+            <div class="flavor-grid">
+                <button data-flavor="lime" class="flavor-btn btn-lime active"></button>
+                <button data-flavor="berry" class="flavor-btn btn-berry"></button>
+                <button data-flavor="ice" class="flavor-btn btn-ice"></button>
+            </div>
+        </div>
+
+        <div class="energy-widget">
+            <div class="energy-header">
+                <p>Foco Estimulado</p>
+                <span id="energy-value" style="color: var(--primary-color); font-weight: bold;">0%</span>
+            </div>
+
+            <div class="energy-bar-bg">
+                <div id="enegy-bar" class="energy-bar-fill"></div>
+            </div>
+
+            <button id="btn-charge" class="btn-charge">Injetar Cafeína</button>
+        </div>
+        </section>
+
+  <section>
+    <div id="glow-effect"></div>
+    <div>
+        <svg width="280" height="500" viewBox="0 0 280 500" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect x="40" y="20" width="200" height="460" rx="40" fill="#222"/>
+            <rect x="40" y="20" width="200" height="80" rx="20" fill="#333"/>
+            <text x="140" y="280" text-anchor="middle" fill="white" font-size="40" font-weight="900" transform="rotate(-90, 140, 280)">VOLT</text>
+            <circle id="can-accent" cx="140" cy="400" r="30" fill="#ccff00"/>
+        </svg>
+    </div>
+</section>
+
+
+    </main>
+<footer>
+    &copy; 2026 Project Volt Energy: desenvolvido por <a href="#">Mvjs</a>
+</footer>
+
+<script src="script.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,259 @@
+/* reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial;
+}
+
+/* Colocando uma imagem no Corpo */
+body {
+     background-size: cover;
+     background-position: center;
+     background-repeat: no-repeat;
+     background-attachment: fixed;
+     background: white;
+     color: black;
+     transition: 0.3s;
+}
+
+
+
+/* HEADER */
+.header {
+    background-image: url("https://media2.giphy.com/media/v1.Y2lkPTZjMDliOTUyMG01bXQ2eTY0bm54NzRvcTdhcDJ5aWZqeWZ0aXVobTNiZHc1dGh1aCZlcD12MV9naWZzX3NlYXJjaCZjdD1n/lQDdDwdZpfYRn1MsJy/200w.gif");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    font-size: 45px;
+}
+.header {
+    min-height: 20vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* LAYOUT PRINCIPAL */
+.container {
+    display: flex; 
+    min-height: 80vh;
+}
+
+/* SIDEBAR */
+.sidebar {
+    width: 200px;
+    background: black;
+    color: rgb(230, 222, 222);
+    padding: 20px;
+}
+
+.sidebar ul {
+    list-style: none;
+    color: #f2eeee;
+}
+
+.sidebar li {
+    margin-bottom: 15px;
+}
+
+.sidebar a {
+    text-decoration: none;
+    color: white;
+}
+
+/* CONTEÚDO */
+.content {
+    display: flex;
+    flex-direction: column;
+    flex: 1; /* ocupa o resto da tela */
+    padding: 0 25px 10px 25px;
+    gap: 20px;
+    border: 2px solid silver;
+
+}
+
+/* CARDS */
+.cards {
+    display: flex; 
+    gap: 20px;
+    flex-wrap: wrap; 
+   
+}
+
+/* Separando em Colunas */
+.porta {
+    display: flex;            
+    flex-direction: column;
+    flex: 1 1 200px; 
+    background: silver;
+    padding: 40px;
+    text-align: center;
+    border-radius: 10px;
+    border: 2px solid rgb(33, 30, 30);
+    color: #111112;
+    gap: 10px;
+    align-items: center;
+    box-shadow: 0 8px 13px silver;
+}
+
+
+.porta2 {
+    display: flex;            
+    flex-direction: column;
+    flex: 1 1 200px; 
+    background:  #C0C0C0;
+    padding: 40px;
+    text-align: center;
+    border-radius: 10px;
+    border: 2px solid rgb(51, 42, 42);
+    gap: 10px;
+    align-items: center;
+     box-shadow: 0 8px 13px;
+}
+
+/* Estilizando as Imagens */
+.porta img {
+    width: 100%;
+    border-radius: 8px;
+    transition: 2s;
+    
+}
+.porta img:hover{
+    transform: scale(1.2);
+}
+
+.porta2 img {
+    width: 100%;
+    border-radius: 8px;
+}
+.porta2 img:hover{
+    transform: scale(1.2);
+}
+/* ------------------------------------------- */
+
+/* Comentarios */
+
+.comentario {
+    background: white;
+    margin-top: 40px;
+   
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+#texto-comentario {
+    height: 100px;
+    width: 600px;
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    resize: none;
+}
+
+
+#btn-comentario {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 120px;
+    padding: 8px;
+    border: none;
+    border-radius: 6px;
+    background: black;
+    color: white;
+    cursor: pointer;
+}
+
+#btn-comentario:hover {
+    background: blue;
+}
+
+#lista-comentario p {
+    background: #f1f1f1;
+    padding: 8px;
+    border-radius: 6px;
+}
+
+
+/* Estilo do Butão */
+
+.btn {
+    display: inline-flex;
+    padding: 10px 20px;
+    background: #111112;
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    text-align: center;
+    margin-top: auto;
+    align-self: center;
+
+}
+
+.btn:hover {
+    background-color: blue;
+}
+/* Botão */
+
+.darkBtn {
+    display: block;
+    margin-left: auto;
+    background-color: #111112;
+    color: #f2eeee;
+    font-weight: 200;
+    border-radius: 5PX;
+    cursor: pointer;
+    
+}
+
+.darkBtn.ativo {
+    background: white;
+    color: #111112;
+}
+
+
+/* FOOTER */
+.footer {
+    background: #222;
+    color: white;
+    text-align: center;
+    padding: 15px;
+}
+
+/* -------------------------------------------------------------------- */
+/* MODO Escuro */
+
+.dark-mode {
+    background: #121212;
+    color: #f1f1f1;
+}
+
+.dark-mode .sidebar {
+    background: #1e1e1e;
+}
+
+.dark-mode .porta,
+.dark-mode .porta2 {
+    background: #1e1e1e;
+    color: #f1f1f1;
+    border: 2px solid #333;
+}
+
+.dark-mode .footer {
+    background: #111;
+}
+
+.dark-mode .comentario {
+    background: #111;
+}
+
+.dark-mode #texto-comentario{
+     background: #111;
+}
+
+
