@@ -1,0 +1,52 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial;
+}
+
+/* HEADER */
+.header {
+    background: #111;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+/* FLEX CONTAINER */
+.container {
+    display: flex; /* ⭐ ativa o flex */
+    min-height: 80vh;
+}
+
+/* COLUNAS BASE */
+.col {
+    padding: 40px;
+    color: white;
+    font-size: 20px;
+    text-align: center;
+}
+
+/* CORES + TAMANHOS */
+.esquerda {
+    background: #e74c3c;   /* vermelho */
+    flex: 1;               /* menor */
+}
+
+.centro {
+    background: #3498db;   /* azul */
+    flex: 2;               /* maior (dobro) */
+}
+
+.direita {
+    background: #2ecc71;   /* verde */
+    flex: 1;
+}
+
+/* FOOTER */
+.footer {
+    background: #111;
+    color: white;
+    text-align: center;
+    padding: 15px;
+}

@@ -1,0 +1,107 @@
+/* Tira a margem padrão */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+}
+
+/* Corpo do Site */
+body {
+     font-family: Arial, sans-serif;
+     background-color: white;
+     color: #222;
+}   
+
+/* Cabeçalho */
+header {
+       background-color: #111;
+       color: whitesmoke ;
+       padding: 20px;
+       text-align: center;
+}
+
+/* Links do MENU */
+nav {
+    margin-top: 10px;
+}
+
+nav a {
+      color: wheat;
+      text-decoration: none;
+      margin: 0 10px;
+      font-weight: bold;
+}
+
+nav a:hover {
+   text-decoration: underline;
+}
+
+/* Aréa Principal */
+main {
+     max-width: 920px;
+     margin: 20px auto;
+     padding: 10px;
+}
+
+
+/* Secões */
+section {
+        background-color: #f4f4f4;
+        padding: 22px;
+        margin-bottom: 22;
+        border-radius: 16;
+        box-shadow: 0 8px 13px;
+}
+
+/* Titulo */
+h2 {
+  margin-bottom: 10px;
+}
+
+/* Paragrafo */
+p {
+  margin-bottom: 10px;
+}
+
+/* Botão */
+button {
+       background-color: #00fbff;
+       color: white;
+       border: none;
+       padding: 11 17px;
+       border-radius: 11px;
+       cursor: pointer;
+       font-weight: bold;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+/* Lista de Serviços */
+ul {
+  padding-left: 20px;
+}
+
+li {
+  margin-bottom: 6px;
+}
+
+/* Rodapé */
+footer {
+  background-color: #111;
+  color: white;
+  text-align: center;
+  padding: 15px;
+  margin-top: 20px;
+}
+
+/* Estilizando a imagem */
+.serviços-imagem img{
+                   width: 100%;
+                   max-width: 350px;
+                   height: auto;
+                   border-radius: 15px;
+                   box-shadow: 0 4px 10px rgbargba(0, 0, 0, 0.2);
+}

@@ -1,0 +1,21 @@
+.container{
+  display: flex;
+  flex-direction: column;         /* em coluna */
+  justify-content: space-between; /* espaço entre elas */
+  height: 100vh;                  /* ocupa a tela toda */
+  padding: 20px;
+}
+
+.Box{
+  width: 120px;
+  height: 80px;
+  background: black;
+  color: white;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+
