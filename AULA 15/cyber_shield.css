@@ -45,7 +45,7 @@ input {
     outline: none;
 }
 
-#strenght-bar {
+#strength-bar {
     height: 10px;
     width: 0%;
     background-color: var(--danger);

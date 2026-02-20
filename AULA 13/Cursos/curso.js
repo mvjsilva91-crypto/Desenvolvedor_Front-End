@@ -5,11 +5,13 @@ botao.addEventListener("click", function(){
     botao.classList.toggle("ativo");
 });
 
+
+
 // Menu responsivo do tipo Hamburguer e vai se alternado a visibilidade do menu  de acordo com o tamanho da tela 
 
 // .menu-toggle e ,menu são classes do CSS 
 const menuToggle = document.querySelector(".menu-toggle");
-const menu = document.querySelector(".menu");
+const sidebar = document.querySelector(".sidebar");
 
 // Se existi no CSS 
 if(menuToggle && menu) {

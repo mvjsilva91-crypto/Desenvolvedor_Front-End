@@ -30,11 +30,12 @@ body {
     text-align: center;
     font-size: 45px;
 }
-.header {
-    min-height: 20vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.sidebar {
+    width: 220px;
+    min-height: calc(100vh - 20vh);
+    background-color: #1e1e1e;
+    color: white;
+    padding: 20px;
 }
 
 /* LAYOUT PRINCIPAL */
@@ -45,10 +46,16 @@ body {
 
 /* SIDEBAR */
 .sidebar {
-    width: 200px;
-    background: black;
-    color: rgb(230, 222, 222);
+    width: 220px;
+    min-height: 100vh;
+    background-color: #1e1e1e;
+    color: white;
     padding: 20px;
+}
+
+
+.sidebar.menu--open {
+    display: flex;
 }
 
 .sidebar ul {
@@ -62,19 +69,75 @@ body {
 
 .sidebar a {
     text-decoration: none;
+    transition: color 0.3s ease;
+    padding: 16px;
+    margin-left: 0; /* espaço entre as linhas */
+    text-align: center;
+    border-top: none;
+    font-weight: bold;
     color: white;
 }
+.sidebar a:hover {
+    color: rgb(137, 137, 193);
+}
+
 
 /* CONTEÚDO */
 .content {
-    display: flex;
-    flex-direction: column;
-    flex: 1; /* ocupa o resto da tela */
-    padding: 0 25px 10px 25px;
-    gap: 20px;
-    border: 2px solid silver;
-
+    flex: 1;
+    padding: 20px;
 }
+
+/* Botão Hamburguer  */
+
+.menu-toggle {
+    display: none;
+    flex-direction: column;
+    gap: 5px;
+    cursor: pointer;
+    background: none;
+    border: none;
+}
+
+.menu-toggle span {
+    display: block;
+    width: 26px;
+    height: 3px;
+    background-color: #333;
+    border-radius: 2px;
+}
+
+/* Responsividade */
+/* MOBILE */
+@media(max-width: 700px) {
+    .container {
+        flex-direction: column;
+        gap: 10px;
+        align-items: stretch;
+    }
+
+    .menu-toggle {
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+        cursor: pointer;
+        align-self: flex-end;
+    }
+
+    .sidebar {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        background-color: #eaf3f3;
+        border-top: 1px solid #e0e0e0;
+        padding: 8px 0;
+    }
+
+    .sidebar.menu--open {
+        display: flex;
+    }
+}
+
 
 /* CARDS */
 .cards {
@@ -148,7 +211,8 @@ body {
 
 #texto-comentario {
     height: 100px;
-    width: 600px;
+    width: 100%;
+    max-width: 600px;
     padding: 10px;
     border-radius: 8px;
     border: 1px solid #ccc;

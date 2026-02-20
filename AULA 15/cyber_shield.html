@@ -1,12 +1,27 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="cyber_shield.css'">
+    <link rel="stylesheet" href="cyber_shield.css">
     <title>Cyber Shield</title>
 </head>
 <body>
-    
+    <div class="container">
+        <h1>Cyber-Shield v1.0</h1>
+
+        <div class="input-group">
+            <label for="">Teste a força da sua chave criptográfica: </label>
+            <input type="password" name="" id="passwordInput" placeholder="Digite sua senha..." value="">
+            <div id="strength-bar"></div>
+            <p id="strengthText">Segurança: Nula</p>
+        </div>
+
+        <button class="btn-scan" id="btnScan">Iniciar Scan de Vulnerabilidades</button>
+        <div class="terminal-box" id="terminal">
+            <div>> Sistema pronto para análise...</div>
+        </div>
+    </div>
 </body>
 </html>
+<script src="cyber_shield.js"></script>
